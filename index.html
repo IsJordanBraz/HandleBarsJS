@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jordan Braz - Utilizando HandleBars</title>
+
+    <link rel="stylesheet" href="./css/dist/style.css">    
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+</head>
+<body>
+    <h1>Video Cards</h1>
+    <ul id="videoCard-list">        
+    </ul>
+    <script id="videoCard-template" type="text/x-handlebars-template">
+        {{#each videoCard}}
+        <li class="character">
+            <h2>{{ model }}</h2>
+            <p>By: {{ madeBy }}</p>
+            <p>memory: {{ memory }}</p>
+            <p>price: {{ price }}</p>
+        </li>
+        {{/each}} 
+    </script>
+    <script src="./index.js"></script>
+</body>
+</html>
