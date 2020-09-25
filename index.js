@@ -23,10 +23,10 @@ const dataSource = {
 };
 
 (() => {
-    const videoCardTemplate = document.getElementById("videoCard-template").innerHTML;
+    const videoCardTemplate = document.getElementById("video-card-template").innerHTML;
     const _videoCardTemplate = Handlebars.compile(videoCardTemplate);
     
-    document.getElementById("videoCard-list").innerHTML = _videoCardTemplate(dataSource);
+    document.getElementById("items").innerHTML = _videoCardTemplate(dataSource);
     
 })();
 

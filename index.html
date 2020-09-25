@@ -5,23 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jordan Braz - Utilizando HandleBars</title>
 
-    <link rel="stylesheet" href="./css/dist/style.css">    
+    <link rel="stylesheet" href="./style.css">    
     <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
 </head>
 <body>
-    <h1>Video Cards</h1>
-    <ul id="videoCard-list">        
-    </ul>
-    <script id="videoCard-template" type="text/x-handlebars-template">
-        {{#each videoCard}}
-        <li class="character">
-            <h2>{{ model }}</h2>
-            <p>By: {{ madeBy }}</p>
-            <p>memory: {{ memory }}</p>
-            <p>price: {{ price }}</p>
-        </li>
-        {{/each}} 
-    </script>
+    <div class="container">
+        <h1>Video Cards</h1>
+        <div id="items">
+        </div>
+
+        <script id="video-card-template" type="text/x-handlebars-template">
+            {{#each videoCard}}
+                <div class="item">
+                    <h2>{{ model }}</h2>
+                    <p>By: {{ madeBy }}</p>
+                    <p>memory: {{ memory }}</p>
+                    <p>price: {{ price }}</p>
+                </div>
+            {{/each}}             
+        </script>        
+    </div>    
     <script src="./index.js"></script>
 </body>
 </html>

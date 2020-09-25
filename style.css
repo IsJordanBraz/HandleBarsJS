@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    height: 100vh;
+    background-color:#e0e0e0;
+}
+
+.container h1{
+    text-align: center;
+    padding: 30px;
+}
+
+.item {
+    background-color: #fafafa;
+    margin: 20px;
+    padding: 20px;
+
+    -webkit-box-shadow: 1px 1px 26px -8px rgba(0,0,0,0.63);
+    -moz-box-shadow: 1px 1px 26px -8px rgba(0,0,0,0.63);
+    box-shadow: 1px 1px 26px -8px rgba(0,0,0,0.63);
+}
